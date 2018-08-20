@@ -1,0 +1,29 @@
+{
+  "name": "personal-website2.0",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongodb": "^3.1.1",
+    "mongoose": "^5.2.4",
+    "nodemon": "^1.18.3",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-lazy-load": "^3.0.13",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "react-scroll-into-view-if-needed": "^2.1.5",
+    "react-transition-group": "^1.2.1"
+  },
+  "scripts": {
+    "client": "react-scripts start",
+    "start": "nodemon ./server/index.js",
+    "heroku-postbuild": "npm install --only=dev && npm install && npm run build",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

@@ -1,0 +1,28 @@
+.sideNav ul {
+  list-style-type: none;
+  padding:0;
+  margin: 0;
+}
+.sideNav {
+  transform: translateX(-100%);
+  position: absolute;
+  width: 70%;
+  color: black;
+  height: 100%;
+  background-color: white;
+  border: thin solid rgb(223,223,223);
+}
+
+.sideNav .navButton {
+  font-size:16px;
+  font-family: 'Nunito', sans-serif;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  margin:0;
+  padding: 15px;
+  border-bottom: thin solid rgb(223,223,223);
+}
+.sideNav .navButton:hover {
+  color: rgb(142, 208, 224);
+  transition: color 300ms ease;
+}

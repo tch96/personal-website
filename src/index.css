@@ -1,0 +1,24 @@
+html {
+  height:100%;
+  width:100%;
+}
+
+body {
+  height:100%;
+  width:100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  overflow-x:hidden;
+  overflow-y:hidden;
+}
+#root {
+  height:100%;
+  width:100%;
+}
+.main-app {
+  height:100%;
+  width:100%;
+}
+
+

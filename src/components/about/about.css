@@ -1,0 +1,82 @@
+.me {
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+}
+
+#avatar {
+    border-radius: 50%;
+    grid-area: avatar;
+}
+.me-content {
+    grid-area: me-content;
+}
+.me > p {
+    text-align: justify;
+}
+
+@media (max-width: 480px) {
+    .me {
+        min-height:100%;
+        padding: 5%;
+        grid-template-rows: 1fr 3fr;
+        grid-template-areas:
+        "avatar"
+        "me-content"
+        ;
+        justify-content: center;
+        align-items: center;
+    }
+    #avatar {
+        max-width: 33%;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+
+@media (min-width: 481px) and (max-width: 829px) {
+    .me {
+        min-height:100%;
+        padding: 5%;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas:
+        "avatar"
+        "me-content"
+        ;
+        justify-content: center;
+        align-items: center;
+    }
+    #avatar {
+        max-width: 25%;
+        max-height:145px;
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+
+@media (min-width: 830px) {
+    .me {
+        height:100%;
+        padding: 1% 5%;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: "avatar me-content";
+        justify-content: center;
+        align-items: center;
+    }
+    #avatar {
+        width: 75%;
+        max-width: px;
+    }
+    .me-content{
+        max-width: 75%;
+        margin:auto;
+    }
+}
+
+/* Large desktop */
+
+@media (min-width: 950px) {
+    #avatar {
+        max-width: 205px;
+    }
+}
