@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './projects.css';
 import ScrollIntoViewIfNeeded from 'react-scroll-into-view-if-needed';
-import bridge from '../../images/bridge.png';
+import bridge from '../../images/bridge.jpg';
+import blogsite from '../../images/blogsite.jpg';
 
 class Projects extends Component {
   render() {
@@ -15,6 +16,30 @@ class Projects extends Component {
         className="projects">
         <span className="section-title mobile">Projects</span>
         <section className="projectsList">
+          <div className="project-content">
+              <div className="project-desc">
+                <h2><a href="http://timmys-blogsite.herokuapp.com/">Tumblr-esque Blogsite</a>
+                  <a className="footer-icon" href="https://github.com/tch96/blogsite2.0">
+                    <i className="fa fa-github" />
+                  </a>
+                </h2>
+                <p> Revamped blogsite built on top of MERN stack, and Cloudinary for image management.
+                  </p>
+                <p>
+                  The purpose of this project was to demonstrate the full-stack and Redux state management skillset that I learned during my summer internship, 
+                  along with further experimentation with the React framework. 
+                  The application is built upon the create-react-app template. Check it out!
+                </p>
+
+                <h3>Built with:</h3>
+                <span> React, Redux, Express/Node, MongoDB </span>
+              </div>
+
+              <div className="img-container center">
+                <img className="project-img" src={blogsite} alt="blogsite_pic"/>
+              </div>
+          </div>
+
           <div className="project-content">
             <div className="project-desc">
               <h2><a href="http://play-bridge.herokuapp.com/">Online Multiplayer Bridge Application</a>
@@ -32,14 +57,11 @@ class Projects extends Component {
 
               <h3>Built with:</h3>
               <span> NodeJS, Socket.IO </span>
-              
-              
-
             </div>
-              <img src={bridge} alt="bridge_pic"/>
-          </div>
 
-          <div className="project-content">
+            <div className="img-container center">
+              <img className="project-img" src={bridge} alt="bridge_pic"/>
+            </div>
           </div>
         </section>
       </ScrollIntoViewIfNeeded>

@@ -47,7 +47,7 @@ class Work extends Component {
         </div>
         <div className="work-details">
           <div className="company">
-          <LazyLoad offset={300}>
+          <LazyLoad className="center" offset={300}>
             <img className="company-icon" src={strayosIcon} alt="strayos-icon"
               onClick={() => { if (window.innerWidth < 830) this.toggleCompany(MyCompanies.Strayos) }}
               onMouseEnter={() => { if (window.innerWidth >= 830) this.toggleCompany(MyCompanies.Strayos) }}
@@ -71,7 +71,7 @@ class Work extends Component {
           </div>
 
           <div className="company">
-          <LazyLoad offset={300}>
+          <LazyLoad className="center" offset={300}>
             <img className="company-icon" src={sondareIcon} alt="sondare-icon"
               onClick={() => { if (window.innerWidth < 830) this.toggleCompany(MyCompanies.Sondare) }}
               onMouseEnter={() => { if (window.innerWidth >= 830) this.toggleCompany(MyCompanies.Sondare) }}
@@ -97,7 +97,7 @@ class Work extends Component {
           </div>
 
           <div className="company">
-          <LazyLoad offset={300}>
+          <LazyLoad className="center" offset={300}>
             <img className="company-icon" src={coollabIcon} alt="coollab-icon"
               onClick={() => { if (window.innerWidth < 830) this.toggleCompany(MyCompanies.Coollab) }}
               onMouseEnter={() => { if (window.innerWidth >= 830) this.toggleCompany(MyCompanies.Coollab) }}

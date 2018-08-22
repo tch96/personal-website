@@ -112,6 +112,10 @@ class Skills extends Component {
                 <i className="devicon-windows8-plain skill-icon"></i> 
                 <span className="skill-name">Azure</span>
               </div>
+              <div>
+                <i/> 
+                <span className="skill-name">GraphQL</span>
+              </div>
             </div>
           </div>
         </div>
