@@ -4,6 +4,7 @@ import logo from '../../images/signature.png';
 import SideNav from '../sideNav/sideNav';
 import {Sections} from '../../App';
 import LazyLoad from 'react-lazy-load';
+import Pdf from '../../resume.pdf';
 
 class Header extends Component {
     render() {
@@ -36,7 +37,7 @@ class Header extends Component {
                     <i className="fa fa-bars" />
                 </a>
                 <a className="name mobile" href="/">Timothy T. Chen</a>
-                <a className="header-icon mobile" href="/resume.pdf">
+                <a className="header-icon mobile" href={Pdf} target="_blank">
                     <i className="fa fa-file-pdf-o" />
                 </a>
 

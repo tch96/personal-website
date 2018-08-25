@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './footer.css';
+import Pdf from '../../resume.pdf';
 
 class Footer extends Component {
   render() {
@@ -19,7 +20,7 @@ class Footer extends Component {
             <i className="fa fa-envelope-square"></i>
           </a>
         </div>
-        <a className="footer-icon resume" href="/resume.pdf">
+        <a className="footer-icon resume" target="_blank" href={Pdf}>
               <i className="fa fa-file-pdf-o" />
               <span className="footer-txt">Grab a resume here!</span>
           </a>
