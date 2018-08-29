@@ -28,7 +28,7 @@ class Projects extends Component {
                 <p>
                   The purpose of this project was to demonstrate the full-stack and Redux state management skillset that I learned during my summer internship, 
                   along with further experimentation with the React framework. 
-                  The application is built upon the create-react-app template. Check it out!
+                  The application is bootstrapped with create-react-app. Check it out!
                 </p>
 
                 <h3>Built with:</h3>

@@ -18,6 +18,12 @@ class App extends Component {
       sectionSelect: Array(numSections).fill(false)
     }
   }
+
+  componentWillMount () {
+    const newState = this.state.sectionSelect;
+    newState[Sections.Me] = true;
+    this.setState({sectionSelect: newState});
+  }
   toggleSideNav() {
     this.setState({ "toggleSideNav": !this.state.toggleSideNav });
   }
